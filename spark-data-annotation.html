@@ -1,0 +1,23 @@
+<head>
+  <title>Spark Data Annotation</title>
+</head>
+
+<body>
+</body>
+
+<template name="list">
+  {{#with listDataContext}}
+    <ul>
+      <h1>{{title}}</h1>
+
+      {{#each items}}
+        {{> listItem}}
+      {{/each}}
+    </ul>
+  {{/with}}
+</template>
+
+<template name="listItem">
+<li>{{name}}</li>
+</template>
+
